@@ -12,11 +12,28 @@ app.use(express.json())
 app.use(cookies())
 connectDB()
 
+app.set("view engine","ejs")
 app.use("/api/v1",publicRoute)
 app.use("/api/v1",userRouter)
 
 app.get("/api/v1/health",(req,res)=>{
     res.status(200).json({message:"server is healthy"})
+})
+
+app.get("/",(req,res)=>{
+    res.render("index")
+})
+
+app.get("/features",(req,res)=>{
+    res.render("features")
+})
+
+app.get("/pricing",(req,res)=>{
+    res.render("pricing")
+})
+
+app.get("/contact",(req,res)=>{
+    res.render("contact")
 })
 
 

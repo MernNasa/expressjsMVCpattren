@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 50px;
+  background: rgba(255,255,255,0.05);
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Pricing */
+.container {
+  text-align: center;
+  padding: 50px;
+}
+
+.pricing {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 10px;
+  width: 250px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.price {
+  font-size: 30px;
+  margin: 15px 0;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background: #38bdf8;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h2>MyBrand</h2>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/features">Features</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <h1>Pricing Plans</h1>
+
+  <div class="pricing">
+    <div class="card">
+      <h3>Basic</h3>
+      <p class="price">₹199/mo</p>
+      <p>Good for beginners</p>
+      <button>Choose</button>
+    </div>
+
+    <div class="card">
+      <h3>Pro</h3>
+      <p class="price">₹499/mo</p>
+      <p>Best for professionals</p>
+      <button>Choose</button>
+    </div>
+
+    <div class="card">
+      <h3>Enterprise</h3>
+      <p class="price">₹999/mo</p>
+      <p>For large teams</p>
+      <button>Choose</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
